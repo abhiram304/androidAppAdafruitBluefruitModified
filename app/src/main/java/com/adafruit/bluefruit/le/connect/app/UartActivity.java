@@ -638,13 +638,27 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
                 }
 
                 // Log.d(TAG, "update packets: "+(bufferSize-mDataBufferLastSize));
-                for (int i = mDataBufferLastSize; i < bufferSize; i++) {
+                /*for (int i = mDataBufferLastSize; i < bufferSize; i++) {
                     final UartDataChunk dataChunk = mDataBuffer.get(i);
                     final boolean isRX = dataChunk.getMode() == UartDataChunk.TRANSFERMODE_RX;
                     final byte[] bytes = dataChunk.getData();
                     final String formattedData = mShowDataInHexFormat ? BleUtils.bytesToHex2(bytes) : BleUtils.bytesToText(bytes, true);
                     addTextToSpanBuffer(mTextSpanBuffer, formattedData, isRX ? mRxColor : mTxColor);
-                }
+                }*/
+
+
+                    final UartDataChunk dataChunk1 = mDataBuffer.get(0);
+                    final boolean isRX1 = dataChunk1.getMode() == UartDataChunk.TRANSFERMODE_RX;
+                    final byte[] bytes1 = dataChunk1.getData();
+                    final String formattedData1 = mShowDataInHexFormat ? BleUtils.bytesToHex2(bytes1) : BleUtils.bytesToText(bytes1, true);
+                    addTextToSpanBuffer(mTextSpanBuffer, formattedData1+" ", isRX1 ? mRxColor : mTxColor);
+
+                    final UartDataChunk dataChunk2 = mDataBuffer.get(bufferSize-1);
+                    final boolean isRX2 = dataChunk2.getMode() == UartDataChunk.TRANSFERMODE_RX;
+                    final byte[] bytes2 = dataChunk2.getData();
+                    final String formattedData2 = mShowDataInHexFormat ? BleUtils.bytesToHex2(bytes2) : BleUtils.bytesToText(bytes2, true);
+                    addTextToSpanBuffer(mTextSpanBuffer, formattedData2+"\n Diff="+ (Float.parseFloat(formattedData1)-Float.parseFloat(formattedData2)) +"\n", isRX2 ? mRxColor : mTxColor);
+
 
                 mDataBufferLastSize = mDataBuffer.size();
                 mBufferTextView.setText(mTextSpanBuffer);
