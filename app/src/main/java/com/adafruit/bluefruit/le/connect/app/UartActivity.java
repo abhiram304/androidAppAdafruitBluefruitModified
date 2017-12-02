@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Spannable;
@@ -42,12 +43,22 @@ import com.adafruit.bluefruit.le.connect.mqtt.MqttManager;
 import com.adafruit.bluefruit.le.connect.mqtt.MqttSettings;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.concurrent.ExecutionException;
 
 public class UartActivity extends UartInterfaceActivity implements MqttManager.MqttManagerListener {
     // Log
@@ -646,19 +657,53 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
                     addTextToSpanBuffer(mTextSpanBuffer, formattedData, isRX ? mRxColor : mTxColor);
                 }*/
 
+                try {
 
-                    final UartDataChunk dataChunk1 = mDataBuffer.get(0);
+                    final UartDataChunk dataChunk1 = mDataBuffer.get(bufferSize - 4);
                     final boolean isRX1 = dataChunk1.getMode() == UartDataChunk.TRANSFERMODE_RX;
                     final byte[] bytes1 = dataChunk1.getData();
                     final String formattedData1 = mShowDataInHexFormat ? BleUtils.bytesToHex2(bytes1) : BleUtils.bytesToText(bytes1, true);
-                    addTextToSpanBuffer(mTextSpanBuffer, formattedData1+" ", isRX1 ? mRxColor : mTxColor);
+                    addTextToSpanBuffer(mTextSpanBuffer, "RMS_ACC" + formattedData1 + " ", isRX1 ? mRxColor : mTxColor);
 
-                    final UartDataChunk dataChunk2 = mDataBuffer.get(bufferSize-1);
+
+                    final UartDataChunk dataChunk2 = mDataBuffer.get(bufferSize - 3);
                     final boolean isRX2 = dataChunk2.getMode() == UartDataChunk.TRANSFERMODE_RX;
                     final byte[] bytes2 = dataChunk2.getData();
                     final String formattedData2 = mShowDataInHexFormat ? BleUtils.bytesToHex2(bytes2) : BleUtils.bytesToText(bytes2, true);
-                    addTextToSpanBuffer(mTextSpanBuffer, formattedData2+"\n Diff="+ (Float.parseFloat(formattedData1)-Float.parseFloat(formattedData2)) +"\n", isRX2 ? mRxColor : mTxColor);
+//                    addTextToSpanBuffer(mTextSpanBuffer, formattedData2+"\n Diff="+ (Float.parseFloat(formattedData1)-Float.parseFloat(formattedData2)) +"\n", isRX2 ? mRxColor : mTxColor);
+                    addTextToSpanBuffer(mTextSpanBuffer, "RMS_GYRO:" + formattedData2 + " ", isRX2 ? mRxColor : mTxColor);
 
+
+                    final UartDataChunk dataChunk3 = mDataBuffer.get(bufferSize - 2);
+                    final boolean isRX3 = dataChunk3.getMode() == UartDataChunk.TRANSFERMODE_RX;
+                    final byte[] bytes3 = dataChunk3.getData();
+                    final String formattedData3 = mShowDataInHexFormat ? BleUtils.bytesToHex2(bytes3) : BleUtils.bytesToText(bytes3, true);
+//                    addTextToSpanBuffer(mTextSpanBuffer, formattedData3+"\n Diff="+ (Float.parseFloat(formattedData1)-Float.parseFloat(formattedData2)) +"\n", isRX3 ? mRxColor : mTxColor);
+                    addTextToSpanBuffer(mTextSpanBuffer, "PITCH:" + formattedData3 + " ", isRX3 ? mRxColor : mTxColor);
+
+                    final UartDataChunk dataChunk4 = mDataBuffer.get(bufferSize - 1);
+                    final boolean isRX4 = dataChunk4.getMode() == UartDataChunk.TRANSFERMODE_RX;
+                    final byte[] bytes4 = dataChunk4.getData();
+                    final String formattedData4 = mShowDataInHexFormat ? BleUtils.bytesToHex2(bytes4) : BleUtils.bytesToText(bytes4, true);
+//                    addTextToSpanBuffer(mTextSpanBuffer, formattedData2+"\n Diff="+ (Float.parseFloat(formattedData1)-Float.parseFloat(formattedData2)) +"\n", isRX4 ? mRxColor : mTxColor);
+                    addTextToSpanBuffer(mTextSpanBuffer, "ROLL:" + formattedData4 + " \n", isRX4 ? mRxColor : mTxColor);
+
+                }
+                catch(Exception ex1) {
+                    Log.v("UART_Data_Exception:", ex1.getStackTrace().toString());
+                }
+                   /* if(Float.parseFloat(formattedData1)-Float.parseFloat(formattedData2)>10){
+                        //Make a get request to the emergency API
+
+                        try {
+                            String[] replyFromTask=new SendData().execute().get();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        } catch (ExecutionException e) {
+                            e.printStackTrace();
+                        }
+
+                    }*/
 
                 mDataBufferLastSize = mDataBuffer.size();
                 mBufferTextView.setText(mTextSpanBuffer);
@@ -683,6 +728,7 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
                 final String currentDateTimeString = DateFormat.getTimeInstance().format(new Date(dataChunk.getTimestamp()));
                 mBufferListAdapter.add(new TimestampData("[" + currentDateTimeString + "] " + (isRX ? "RX" : "TX") + ": " + formattedData, isRX ? mRxColor : mTxColor));
 //                mBufferListAdapter.add("[" + currentDateTimeString + "] " + (isRX ? "RX" : "TX") + ": " + formattedData);
+
             }
             mBufferListView.setSelection(mBufferListAdapter.getCount());
         } else {
@@ -692,6 +738,63 @@ public class UartActivity extends UartInterfaceActivity implements MqttManager.M
         }
     }
 
+
+    private class SendData extends AsyncTask<Void,Void,String[]> {
+
+        String[] reply=new String[3];
+        @Override
+        protected String[] doInBackground(Void... params) {
+            try {
+                URL url = new URL("https://fallnotify.herokuapp.com/send?msg=emergency");
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+                conn.setRequestProperty("Accept", "application/json");
+
+                //System.out.println("URL="+url);
+                //System.out.println("conn.getResponseCode():"+conn.getResponseCode());
+
+                StringBuilder googleResponse=new StringBuilder();
+
+                if (conn.getResponseCode() == 200) {
+
+                    BufferedReader br = new BufferedReader(new InputStreamReader(
+                            (conn.getInputStream())));
+
+                    String output;
+                    //System.out.println("Output from Server .... \n");
+                    while ((output = br.readLine()) != null) {
+                        googleResponse.append(output);
+                        //System.out.println(output);
+                    }
+
+
+                }
+                conn.disconnect();
+
+            } catch (MalformedURLException e) {
+
+                e.printStackTrace();
+//                Toast.makeText(getActivity(), "Error occured: Invalid URL", Toast.LENGTH_SHORT).show();
+                reply[0]="MalformedURLException";
+
+            } catch (IOException e) {
+
+                e.printStackTrace();
+//                Toast.makeText(getActivity(), "Error occured: IO", Toast.LENGTH_SHORT).show();
+                reply[0]="IOException";
+
+            }
+
+            return reply;
+        }
+
+        @Override
+        protected void onPostExecute (String[] result) {
+
+            super.onPostExecute(reply);
+
+        }
+    }
 
 
     // region DataFragment

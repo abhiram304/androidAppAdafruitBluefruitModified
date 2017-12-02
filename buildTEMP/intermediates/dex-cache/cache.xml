@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/b36bca095ec043cd10c24dc8c8653102609f701c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="63b03eaa1aa9b9431c7638841175f9842dcbf274">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_94d1de6462387a62e98fa4f3bb20f2377ad2e7dd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/773815884524370be8cda9aa5c6c2c4268c67257/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a25b0b5aec89681b95d32780ad7904c1e1e4c679">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fc3b47a057df8d269a99898deb24f17e65e9b46b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/4788be04430d700d92b1a639126e6064e581605c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f278275f148885a21de24c7b12ea8a70f763a885/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/117a7f14ba47ced51b9f58759ad60b6ebc6225e1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_728e0fb48b685f42b8f0b0e1078f7801bb81402b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_40fda844f9c2bc48e0ee8a1c69492a2a50657b68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/70694fad5a1e1a665f994297bc060204f1e80120/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f8b55cc8e13a809debbec9f321914fc685f5dd67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/d6a079218f0989f166a5da0f0523552a021df67b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7f94b0e98870f90ea741a0c07b360a5042e8f289/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/779b9a5179080d04f32062ebd151900d98e89724/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_79e22ba5107bb5459f0b8a6d9c7e53d3f75416e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7042488d5e7c353cc920b7cdf669a75962ee8ac6">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7cff3b559465a8e5d935371a36ee34749820b49d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/org.eclipse.paho.client.mqttv3/1.0.2/11752d3f24d1a9deda4533a7ca18d8496417ceeb/org.eclipse.paho.client.mqttv3-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="11752d3f24d1a9deda4533a7ca18d8496417ceeb">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/org.eclipse.paho.client.mqttv3-1.0.2_51f7489754d26a0438323711e051b7793cd24c64/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/37ff75df44e07238ace1dcde715fa920bca8f5a2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eb8f038df00b7b2e89502d704a436dd9aa2e965e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_79c90606e7525381e25920a8b2985631a28841d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/d504de6066d5d19d87b17a61673e3c745e1078d7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7adb427c46d3af9ae92b7faf8782be287a0f596a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/30f97c4471a57123f0fea3acd4a819888e702f0a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5d5a825cbf0f67237377034c2c4edf9ba7e60fbe">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dc53bcb5794e56c39e3e2b9edc4cba4414a3a073/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/679b746ce96fca5e4a9ab5234768bc0e00527dcd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2c2f1b3f82c027e98f56bb0154de0acbcce42e6d">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a467273fa66306f464b043fc7deac75ab6d9c96b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/3bc498ba706b1dcc4ca0f2e2929797dc795e69ec/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="20e16b60ea88f1273d88d6792711907b6526af83">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7e9c2571a73b51907992548f96b9894875a29c06/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/ece98ddf9158e9c557a7d0af6b9e95f83f73b588/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_484a190b18590088307d3bb30e6e8582c07f19db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/470794416f38ebaf1232840590a855174229ed91/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ec26a59b5c51bc982124ccffcafed2b007501e90/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/ecca36a7a49bd66849e2f15dcdf62857233f0987/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7ccfdc05430a0b556a08cafb5a80c2272073bb36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/c8223439ff9969dfc36906cfde54aacb5c4f289a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6b3430725095bd46b785e97bd34240826c27b4db">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f34b1c97263b0d9faedd3e584cd3cf266d533c29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.5/686c608d1805b6d4d425ec4459e88164ffc85870/gson-2.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.5_0873ece98b6fc4ab49e5925193381df60d158ead/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/8ebc9219cba561b9eb36245b7bb634e38d0ee06d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1849182b195e83c93c00b867e7f569aac5df6387/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/7dde48a66a772935973722415215a40ac8d7fe6a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e646ddfe71ec8164b9705a0875ae390275710042/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/197885d1c27c9c7bbf014a6e86ff29e2d346a1a9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9690028010f8e1131154b350a7975537d2bdd030/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/6396c4c8db802f4d414973a2a4eaec6c737a3779/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d3626630bcdfdfc8e43acbf02b774c6c043c593d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/39440035f733d9b71b1caf57700eabd38f8da5e3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c1b91bc7e480ab100d0397b16c93732e26fd10eb">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_363198ef819784c1c425dd2e133555d32b80ac70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/1811472bead7ac1b9a0477fa68c24a75bfd4831e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eee24508eca05cd91ace6cea5b918098a7b5acfb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.android/build-cache/e71e8f784ccc11e5ffff7f306641e96f5654438f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_128c9538a1efed49088f7fb1991a6fc7f03f705c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/narasakumar/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/org.eclipse.paho.android.service/1.0.2/2d956522c556caeb35148445ecd059ebe67331f6/org.eclipse.paho.android.service-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2d956522c556caeb35148445ecd059ebe67331f6">
+        <dex dex="/home/narasakumar/AndroidStudioProjects/Bluefruit_LE_Connect_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/org.eclipse.paho.android.service-1.0.2_b77ad73611bdf344a1fba44d377feffba393686c/classes.dex" />
+    </item>
+
+</items>

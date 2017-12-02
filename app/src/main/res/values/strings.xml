@@ -92,7 +92,6 @@
     <string name="scan_filters_onlyuart">Must have UART service</string>
 
 
-
     <string-array name="scan_devicetypes">
         <item>Uknown</item>
         <item>UART capable</item>
@@ -431,6 +430,10 @@
     <!-- Common -->
     <string name="dialog_notice">Notice</string>
     <string name="dialog_dontshowagain">Don\'t show again</string>
+    <string name="title_activity_navigation">Home 295B</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <!-- Debug -->
 

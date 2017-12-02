@@ -144,6 +144,8 @@ public class MainActivity extends AppCompatActivity implements BleManager.BleMan
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        MainActivity.this.setTitle("Device Settings");
+
         // Init variables
         mBleManager = BleManager.getInstance(this);
         restoreRetainedDataFragment();
